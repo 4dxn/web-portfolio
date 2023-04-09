@@ -1,0 +1,31 @@
+.habilities-container {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}

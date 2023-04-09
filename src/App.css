@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dropdown {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.dropdown-text {
+  font-size: large;
+}

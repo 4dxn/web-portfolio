@@ -1,0 +1,56 @@
+.icon-holder {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 4px;
+  margin-right: 4px;
+  transition: flex 0.4s;
+}
+
+.icon-text {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.text {
+  transform: translateX(-100%);
+  margin-left: 0;
+  transition: all 0.1s ease;
+  opacity: 0;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  transition: width;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.icon-holder:hover .text {
+  transition-delay: 0.1s;
+  display: block;
+  opacity: 1;
+  margin-left: 4px;
+  transform: translateX(0%);
+}
+
+.icon-holder:not(:hover) .text{
+  display: none;
+}
+
+.icon-holder:hover .line {
+  width: 100%;
+}
+
